@@ -1,25 +1,27 @@
 # java-basico-uml
-Resposta do POO - Desafio
+Resposta ao POO - Desafio
 
-### Diagrama de Classes
+### Diagrama de Classes:
 
 ```mermaid
-graph LR
 classDiagram
 
     class ReprodutorMusical {
+        <<interface>>
         +tocar()
         +pausar()
         +selecionarMusica(String musica)
     }
 
     class AparelhoTelefonico {
+        <<interface>>
         +ligar(String numero)
         +atender()
         +iniciarCorreioVoz()
     }
 
     class NavegadorInternet {
+        <<interface>>
         +exibirPagina(String url)
         +adicionarNovaAba()
         +atualizarPagina()
@@ -40,3 +42,6 @@ classDiagram
     iPhone --|> ReprodutorMusical
     iPhone --|> AparelhoTelefonico
     iPhone --|> NavegadorInternet
+
+
+```
